@@ -1,0 +1,52 @@
+<model xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+       xmlns:security="http://namespaces.plone.org/supermodel/security"
+       xmlns:lingua="http://namespaces.plone.org/supermodel/lingua"
+       xmlns:marshal="http://namespaces.plone.org/supermodel/marshal"
+       xmlns:form="http://namespaces.plone.org/supermodel/form"
+       xmlns="http://namespaces.plone.org/supermodel/schema">
+  <schema>
+    <field name="first_name" type="zope.schema.TextLine">
+      <description/>
+      <title>First Name</title>
+    </field>
+    <field name="last_name" type="zope.schema.TextLine">
+      <description/>
+      <title>Last Name</title>
+    </field>
+    <field name="email" type="zope.schema.TextLine">
+      <description/>
+      <title>Email</title>
+    </field>
+    <field name="homepage" type="zope.schema.TextLine">
+      <description/>
+      <required>False</required>
+      <title>Homepage</title>
+    </field>
+    <field name="biography" type="plone.app.textfield.RichText">
+      <description/>
+      <max_length>1000</max_length>
+      <required>False</required>
+      <title>Biography</title>
+    </field>
+    <field name="company" type="zope.schema.TextLine">
+      <description/>
+      <required>False</required>
+      <title>Company</title>
+    </field>
+    <field name="twitter_name" type="zope.schema.TextLine">
+      <description/>
+      <required>False</required>
+      <title>Twitter-Name</title>
+    </field>
+    <field name="itc_name" type="zope.schema.TextLine">
+      <description/>
+      <required>False</required>
+      <title>IRC-Name</title>
+    </field>
+    <field name="image" type="plone.namedfile.field.NamedBlobImage">
+      <description/>
+      <required>False</required>
+      <title>Image</title>
+    </field>
+  </schema>
+</model>

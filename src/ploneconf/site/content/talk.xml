@@ -1,0 +1,60 @@
+<model
+    xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+    xmlns:security="http://namespaces.plone.org/supermodel/security"
+    xmlns:lingua="http://namespaces.plone.org/supermodel/lingua"
+    xmlns:marshal="http://namespaces.plone.org/supermodel/marshal"
+    xmlns:form="http://namespaces.plone.org/supermodel/form"
+    xmlns="http://namespaces.plone.org/supermodel/schema">
+  <schema>
+    <field name="type_of_talk" type="zope.schema.Choice">
+      <description/>
+      <required>False</required>
+      <title>Type of Talk</title>
+      <values>
+        <element>Talk</element>
+        <element>Keynote</element>
+        <element>Training</element>
+      </values>
+    </field>
+    <field name="details" type="plone.app.textfield.RichText">
+      <description/>
+      <max_length>2000</max_length>
+      <required>False</required>
+      <title>Details</title>
+    </field>
+    <field name="audience" type="zope.schema.Set">
+      <default/>
+      <description/>
+      <required>False</required>
+      <title>Audience</title>
+      <value_type type="zope.schema.Choice">
+        <values>
+          <element>Beginner</element>
+          <element>Advanced</element>
+          <element>Professional</element>
+        </values>
+      </value_type>
+    </field>
+    <field name="speaker" type="zope.schema.TextLine">
+      <description/>
+      <required>False</required>
+      <title>Speaker</title>
+    </field>
+    <field name="email" type="zope.schema.TextLine">
+      <description/>
+      <required>False</required>
+      <title>Email</title>
+    </field>
+    <field name="image" type="plone.namedfile.field.NamedBlobImage">
+      <description/>
+      <required>False</required>
+      <title>Image</title>
+    </field>
+    <field name="speaker_biography" type="plone.app.textfield.RichText">
+      <description/>
+      <max_length>1000</max_length>
+      <required>False</required>
+      <title>Speaker Biography</title>
+    </field>
+  </schema>
+</model>
